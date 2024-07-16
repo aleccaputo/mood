@@ -1,0 +1,23 @@
+services:
+  mood-app:
+    container_name: mood-app
+    build: .
+    environment:
+      DATABASE_URL: "postgres://postgres:<password>@mood-db:5432/mooddb"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mood-db
+  mood-db:
+    container_name: mood-db
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=<password>
+      - POSTGRES_DB=mooddb
+    volumes:
+      - mooddbdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  mooddbdata:
