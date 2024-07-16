@@ -34,7 +34,3 @@ func NewUser(firstName, lastName, email string) *User {
 		CreatedAt: time.Now().UTC(),
 	}
 }
-
-func ValidateUser(u *User) bool {
-	return true
-}

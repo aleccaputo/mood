@@ -28,7 +28,7 @@ func main() {
 	}
 
 	server := api.NewServer(*listenAddr, postGresDatabase)
+
 	fmt.Println("server running on port: ", *listenAddr)
 	log.Fatal(server.Start())
-
 }
