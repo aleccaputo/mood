@@ -5,7 +5,7 @@ FROM golang:1.22-alpine
 WORKDIR /app
 
 # Copy the source code
-COPY . .
+COPY .. .
 
 # Download and install the dependencies
 RUN go get -d -v ./...

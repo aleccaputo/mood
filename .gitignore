@@ -22,4 +22,15 @@ go.work
 go.work.sum
 
 # env file
-.env
+server/.env
+
+node_modules
+
+/client/cache
+/client/build
+
+# Sentry Config File
+.sentryclirc
+
+# Sentry Config File
+.env.sentry-build-plugin
