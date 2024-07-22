@@ -1,4 +1,4 @@
-# Mood
+# Mood ☔️🌞
 
 Mood is an application designed to help you log your daily mood and analyze the data to find the factors that make your days the best. The app is built with Go for the backend and Remix for the frontend. This project is structured into two main folders: `server` (containing the Go code) and `client` (containing the Remix code).
 
